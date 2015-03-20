@@ -1,0 +1,25 @@
+// Impuestosapagar.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+int main()
+{
+	float S,SM,A;
+	cout<<"ingrese el monto del salario:";
+	cin>>S;
+	cout<<"ingrese el salario mínimo";
+	cin>>SM;
+    if (S>=SM)
+	 {	
+		A=(S*0.11);
+		cout<<"Los impuestos a pagar son:"<<A;
+	 }
+	else 
+	    cout<<"ningun impuesto";
+	getch ();
+	return 0;
+}
