@@ -1,0 +1,36 @@
+int main() {
+	float a;
+	float b;
+	float c;
+	float d;
+	float ef;
+	float i;
+	int id;
+	float n;
+	float np;
+	float p1;
+	float p2;
+	float p3;
+	cout << "Ingrese el numero de estudiantes: " << endl;
+	cin >> n;
+	for (i=1;i<=n;i++) {
+		cout << "Ingrese el Id del alumno: " << endl;
+		cin >> id;
+		cout << "Ingrese la nota del primer parcial: " << endl;
+		cin >> p1;
+		cout << "Ingrese la nota del segundo parcial" << endl;
+		cin >> p2;
+		cout << "Ingrese la nota del tercer parcial: " << endl;
+		cin >> p3;
+		cout << "Ingrese la nota practica" << endl;
+		cin >> np;
+		cout << "Ingrese la nota final" << endl;
+		cin >> ef;
+		a = ((p1+p2+p3)/3)*0.4;
+		b = np*0.2;
+		c = ef*0.4;
+		d = a+b+c;
+		cout << "La nota final es: " << d << endl;
+	}
+	return 0;
+}
