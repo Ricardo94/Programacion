@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main() {
+	float i, n, sig, s, x, 
+
+	cout << "Ingrese el valor de X: " << endl;
+	cin >> x;
+	cout << "Ingrese la cantidad de veces N: " << endl;
+	cin >> n;
+	s = 0;
+	sig = 1;
+	for (i=1;i<=n;i++) {
+		sig = (sig*(-1));
+		s = (s+(sig)*pow(x,i));
+	}
+	cout << "El valor Total es: " << s << endl;
+	return 0;
+}
