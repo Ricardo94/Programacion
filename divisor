@@ -1,0 +1,26 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+int main() {
+	
+	int a, b, mayor, menor
+	cout << "Ingrese el primer numero" << endl;
+	cin >> a;
+	cout << "Ingrese el segundo numero" << endl;
+	cin >> b;
+	if (a<b) {
+		mayor = b;
+		menor = a;
+	} else {
+		mayor = a;
+		menor = b;
+	}
+	if (mayor%menor==0) {
+		cout << "Es divisor el mayor del menor" << endl;
+	} else {
+		cout << "No es divisor el mayor del menor" << endl;
+	}
+	return 0;
+}
