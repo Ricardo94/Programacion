@@ -1,0 +1,49 @@
+#include "Stdafx.h"
+#include <iostream>
+#include "math.h"
+#include "conio.h"
+
+using namespace std;
+
+float serie (float x, int n);
+float potencia (float x, int exp);
+int factorial (int num);
+
+void main ()
+ {
+	float base, s;
+	int n;
+	cout<<"ingrese la base (x): ";
+	cin>>base;
+	cout<<"ingrese n: ";
+	cin>>n;
+	s=serie(base,n);
+	cout<<"la suma es: ";
+	cout<<s;
+	getch();
+}
+
+float serie (float x, int n)
+	{
+	float s=0;
+	int i;
+	for ( i=1; i<=n; i++)
+		s=s+potencia(x,i)/factorial(i);
+	return s;
+	}
+	
+float potencia(float x, int exp)
+    {
+     int i;
+	 float p=1;
+     for(i=1; i<=exp; i++)
+		 p=p*x;
+	 return p;
+	 }
+int factorial (int num)
+    {int i, f;
+     f=1;
+	 for(i=1; i<=num; i++)
+		 f=f*i;
+	 return f;
+     }
