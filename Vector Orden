@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void cargar (int vec[], int tam);
+void mostrar (int vec[], int tam);
+void ordenar (int vec[], int tam);
+void main ()
+    do {
+	int vect[MAX], N;
+	cout<<"Ingrese la cantidad n: ";
+	cin>>n;
+    } while ((n<=0) || (n>100));
+      cargarvector (vector,n);
+	  mostrar (vector,n);
+	  ordenar (vector,n);
+	  
+	  getch ();
+}
+void cargar(int vec[], int tam)
+{
+	for (int i=0;i<tam;i++)
+	{ 
+			cout<<"Ingrese el valor de vec["<<i<<"]= ";
+			cin>>vec[i];
+	}
+}
