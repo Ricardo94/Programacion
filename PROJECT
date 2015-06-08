@@ -1,0 +1,39 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "windows.h"
+using namespace std;
+struct parrafo
+{char a[100];
+};
+void main()
+{ int i=0,n,op;
+parrafo vec[30];
+cout<<"Introduzca un parrafo: \n";
+do
+{do
+gets(vec[i].a);
+while (strln(vec[i].a)==0);
+i++;
+cout<<"\nDesea introducir una nueva orden?: ";
+cout<<"\nSi -->1";
+cout<<"\nNo -->0";
+cin>>op;
+if(op!=0)
+{cout<<"Introduzca un nuevo parrafo: \n";
+}
+}while (op!=0);
+n=1;
+cout<<"se dictara el texto completo: \n";
+for(i=0;i<n;i++)
+cout<<"vec[i].a;
+cout<<endl;
+sleep(2000);
+}
+cout<"\t\t\t\tfin.";
+getch();
+}
+
+	
+	return 0;
+}
