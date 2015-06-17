@@ -1,0 +1,445 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "string"
+#include "ctime"
+using namespace std;
+
+namespace PROJECT {
+
+	/*public ref class Class1
+	{
+		// TODO: Add your methods for this class here.
+	};
+
+	return 0;*/
+};
+
+
+void pause(int dur)
+{
+	int temp=time(NULL)+dur;
+	while(temp>time(NULL));
+}
+
+void menuclasica(int op)
+{
+	switch(op) 
+	{
+	case 1 :					{		system("cls");cout<<endl<<"USTED HA SELECCIONADO CLASICA";
+										string a,b,c,d,e;
+									
+										cout<<endl<<"Ingresar los siguietes datos  ";
+
+										getline (cin, a);
+										cout<<"INTRODUCCION:  ";
+										getline (cin, a);
+										cout<<"INGRESE LA IDEA PRINCIPAL:  ";
+										getline (cin, b);
+										cout<<"INGRESE LA IDEA SECUNDARIA:  ";
+										getline (cin, c);
+										cout<<"INGRESE EL PUNTO MAS IMPORTANTE:  ";
+										getline (cin, d);
+										cout<<"INGRESE OTRO PUNTO INFORMATIVO:  ";
+										getline (cin, e);
+
+										system("cls");
+										cout<<"                          "<<a;getch();
+										//pause(3);
+										cout<<endl<<endl<<b;getch();
+										//pause(3);
+										cout<<endl<<endl<<c;getch();
+										//pause(3);
+										cout<<endl<<endl<<d;getch();
+										//pause(3);
+										cout<<endl<<endl<<e;getch();
+										//pause(3);
+										cout<<endl<<endl<<endl;
+										system("Pause");
+								}
+										break;
+	case 2:
+		{
+										system("cls");cout<<endl<<"USTED HA SELECCIONADO PROFESIONAL";
+										string a,b,c,d,e,f;
+									
+										cout<<endl<<"Ingresar los siguietes datos  ";
+
+										getline (cin, a);
+										cout<<"INTRODUCCION:  ";
+										getline (cin, a);
+										cout<<"INGRESE LA IDEA PRINCIPAL:  ";
+										getline (cin, b);
+										cout<<"INGRESE LA IDEA SECUNDARIA:  ";
+										getline (cin, c);
+										cout<<"INGRESE EL PUNTO MAS IMPORTANTE:  ";
+										getline (cin, d);
+										cout<<"INGRESE OTRO PUNTO INFORMATIVO:  ";
+										getline (cin, e);
+										cout<<"INGRESE OTRO PUNTO INFORMATIVO:  ";
+										getline (cin, f);
+
+										system("cls");
+										cout<<"                          "<<a;getch();
+										pause(3);
+										cout<<endl<<endl<<b;getch();
+										//pause(3);
+										cout<<endl<<endl<<c;getch();
+										//pause(3);
+										cout<<endl<<endl<<d;getch();
+										//pause(3);
+										cout<<endl<<endl<<e;getch();
+										//pause(3);
+										cout<<endl<<endl<<f;getch();
+										//pause(3);
+										cout<<endl<<endl<<endl;
+										system("Pause");
+		}
+										break;
+
+	case 3 :						{	system("cls");cout<<endl<<"USTED HA SELECCIONADO EXPERTO";
+										string a,b,c,d,e,f,g;
+									
+										cout<<endl<<"Ingresar los siguietes datos  ";
+
+										getline (cin, a);
+										cout<<"INTRODUCCION:  ";
+										getline (cin, a);
+										cout<<"INGRESE LA IDEA PRINCIPAL:  ";
+										getline (cin, b);
+										cout<<"INGRESE LA IDEA SECUNDARIA:  ";
+										getline (cin, c);
+										cout<<"INGRESE EL PUNTO MAS IMPORTANTE:  ";
+										getline (cin, d);
+										cout<<"INGRESE OTRO PUNTO INFORMATIVO:  ";
+										getline (cin, e);
+										cout<<"INGRESE OTRO PUNTO INFORMATIVO:  ";
+										getline (cin, f);
+										cout<<"INGRESE OTRO PUNTO INFORMATIVO:  ";
+										getline (cin, g);
+
+										system("cls");
+										cout<<"                          "<<a;getch();
+										pause(3);
+										cout<<endl<<endl<<b;getch();
+										//pause(3);
+										cout<<endl<<endl<<c;getch();
+										//pause(3);
+										cout<<endl<<endl<<d;getch();
+										//pause(3);
+										cout<<endl<<endl<<e;getch();
+										//pause(3);
+										cout<<endl<<endl<<f;getch();
+										//pause(3);
+										cout<<endl<<endl<<g;getch();
+										//pause(3);
+										cout<<endl<<endl<<endl;
+										system("Pause");
+									}
+										break;
+	case 4 :						{	system("cls");cout<<endl<<"USTED HA SELECCIONADO PERSONALIZADO";
+										string a,b,c;
+									
+										cout<<endl<<"Ingresar los siguietes datos  ";
+
+										getline (cin, a);
+										cout<<"INTRODUCCION:  ";
+										getline (cin, a);
+										cout<<"INGRESE LA IDEA PRINCIPAL:  ";
+										getline (cin, b);
+										cout<<"INGRESE LA IDEA PRINCIPAL:  ";
+										getline (cin, c);
+										
+										system("cls");
+										cout<<"                          "<<a;getch();
+										pause(3);
+										cout<<endl<<endl<<b;getch();
+										//pause(3);
+										cout<<endl<<endl<<c;getch();
+										//pause(3);
+										cout<<endl<<endl<<endl;
+										system("Pause");
+									}
+										break;
+	}
+}
+
+void menuconferencia(int op)
+{
+	switch(op) 
+	{
+	case 1 :					{		system("cls");cout<<endl<<"USTED HA SELECCIONADO CLASICA";
+										string a,b,c,d,e;
+									
+										cout<<endl<<"Ingresar los siguietes datos  ";
+
+										getline (cin, a);
+										cout<<"INTRODUCCION:  ";
+										getline (cin, a);
+										cout<<"INGRESE LA IDEA PRINCIPAL:  ";
+										getline (cin, b);
+										cout<<"INGRESE LA IDEA SECUNDARIA:  ";
+										getline (cin, c);
+										cout<<"INGRESE EL PUNTO MAS IMPORTANTE:  ";
+										getline (cin, d);
+										cout<<"INGRESE OTRO PUNTO INFORMATIVO:  ";
+										getline (cin, e);
+
+										system("cls");
+										cout<<"                          "<<a;getch();
+										pause(3);
+										cout<<endl<<endl<<b;getch();
+										//pause(3);
+										cout<<endl<<endl<<c;getch();
+										//pause(3);
+										cout<<endl<<endl<<d;getch();
+										//pause(3);
+										cout<<endl<<endl<<e;getch();
+										//pause(3);
+										cout<<endl<<endl<<endl;
+										system("Pause");
+								}
+										break;
+	case 2:
+		{
+										system("cls");cout<<endl<<"USTED HA SELECCIONADO PROFESIONAL";
+										string a,b,c,d,e,f;
+									
+										cout<<endl<<"Ingresar los siguietes datos  ";
+
+										getline (cin, a);
+										cout<<"INTRODUCCION:  ";
+										getline (cin, a);
+										cout<<"INGRESE LA IDEA PRINCIPAL:  ";
+										getline (cin, b);
+										cout<<"INGRESE LA IDEA SECUNDARIA:  ";
+										getline (cin, c);
+										cout<<"INGRESE EL PUNTO MAS IMPORTANTE:  ";
+										getline (cin, d);
+										cout<<"INGRESE OTRO PUNTO INFORMATIVO:  ";
+										getline (cin, e);
+										cout<<"INGRESE OTRO PUNTO INFORMATIVO:  ";
+										getline (cin, f);
+
+										system("cls");
+										cout<<"                          "<<a;getch();
+										pause(3);
+										cout<<endl<<endl<<b;getch();
+										//pause(3);
+										cout<<endl<<endl<<c;getch();
+										//pause(3);
+										cout<<endl<<endl<<d;getch();
+										//pause(3);
+										cout<<endl<<endl<<e;getch();
+										//pause(3);
+										cout<<endl<<endl<<f;getch();
+										//pause(3);
+										cout<<endl<<endl<<endl;
+										system("Pause");
+		}
+										break;
+
+	
+	case 3 :						{	system("cls");cout<<endl<<"USTED HA SELECCIONADO PERSONALIZADO";
+										string a,b,c;
+									
+										cout<<endl<<"Ingresar los siguietes datos  ";
+
+										getline (cin, a);
+										cout<<"INTRODUCCION:  ";
+										getline (cin, a);
+										cout<<"INGRESE LA IDEA PRINCIPAL:  ";
+										getline (cin, b);
+										cout<<"INGRESE LA IDEA PRINCIPAL:  ";
+										getline (cin, c);
+										
+										system("cls");
+										cout<<"                          "<<a;getch();
+										pause(3);
+										cout<<endl<<endl<<b;getch();
+										//pause(3);
+										cout<<endl<<endl<<c;getch();
+										//pause(3);
+										cout<<endl<<endl<<endl;
+										system("Pause");
+									}
+										break;
+	}
+}
+void menurecordatorio(int op)
+{
+	switch(op) 
+	{
+	case 1:
+		{
+										system("cls");cout<<endl<<"USTED HA SELECCIONADO PROFESIONAL";
+										string a,b,c,d,e,f;
+									
+										cout<<endl<<"Ingresar los siguietes datos  ";
+
+										getline (cin, a);
+										cout<<"INTRODUCCION:  ";
+										getline (cin, a);
+										cout<<"INGRESE LA IDEA PRINCIPAL:  ";
+										getline (cin, b);
+										cout<<"INGRESE LA IDEA SECUNDARIA:  ";
+										getline (cin, c);
+										cout<<"INGRESE EL PUNTO MAS IMPORTANTE:  ";
+										getline (cin, d);
+										cout<<"INGRESE OTRO PUNTO INFORMATIVO:  ";
+										getline (cin, e);
+										cout<<"INGRESE OTRO PUNTO INFORMATIVO:  ";
+										getline (cin, f);
+
+										system("cls");
+										cout<<"                          "<<a;getch();
+										pause(3);
+										cout<<endl<<endl<<b;getch();
+										//pause(3);
+										cout<<endl<<endl<<c;getch();
+										//pause(3);
+										cout<<endl<<endl<<d;getch();
+										//pause(3);
+										cout<<endl<<endl<<e;getch();
+										//pause(3);
+										cout<<endl<<endl<<f;getch();
+										//pause(3);
+										cout<<endl<<endl<<endl;
+										system("Pause");
+		}
+										break;
+
+	
+	case 2 :						{	system("cls");cout<<endl<<"USTED HA SELECCIONADO PERSONALIZADO";
+										string a,b,c;
+									
+										cout<<endl<<"Ingresar los siguietes datos  ";
+
+										getline (cin, a);
+										cout<<"INTRODUCCION:  ";
+										getline (cin, a);
+										cout<<"INGRESE LA IDEA PRINCIPAL:  ";
+										getline (cin, b);
+										cout<<"INGRESE LA IDEA PRINCIPAL:  ";
+										getline (cin, c);
+										
+										system("cls");
+										cout<<"                          "<<a;getch();
+										pause(3);
+										cout<<endl<<endl<<b;getch();
+										//pause(3);
+										cout<<endl<<endl<<c;getch();
+										//pause(3);
+										cout<<endl<<endl<<endl;
+										system("Pause");
+									}
+										break;
+	}
+}
+void menulibre(int op)
+{
+	switch(op) 
+	{
+	
+	
+	case 1 :						{	system("cls");cout<<endl<<"USTED HA SELECCIONADO PERSONALIZADO";
+										string a,b,c;
+									
+										cout<<endl<<"Ingresar los siguietes datos  ";
+
+										getline (cin, a);
+										cout<<"INTRODUCCION:  ";
+										getline (cin, a);
+										cout<<"INGRESE LA IDEA PRINCIPAL:  ";
+										getline (cin, b);
+										cout<<"INGRESE LA IDEA PRINCIPAL:  ";
+										getline (cin, c);
+										
+										system("cls");
+										cout<<"                          "<<a;getch();
+										pause(3);
+										cout<<endl<<endl<<b;getch();
+										//pause(3);
+										cout<<endl<<endl<<c;getch();
+										//pause(3);
+										cout<<endl<<endl<<endl;
+										system("Pause");
+									}
+										break;
+	}
+}
+
+
+////////////////////////////////////////////////////////////////MAIN////////////////////////////////////////
+void main ()
+{
+	int a,b,c, opcion, opcion2,opcion3,opcion4;
+	string d,e,f,g;
+	do {
+		cout<<"               Menu";
+		cout<<endl<<"1.-EXPOSICION"<<endl;
+		cout<<"2.-CONFERENCIA"<<endl;
+		cout<<"3.-RECORDATORIO"<<endl;
+		cout<<"4.-LIBRE"<<endl;
+		cout<<"0.-SALIR"<<endl;
+		cout<<"SELECCIONE UNA OPCION"<<endl;
+		cin>>opcion;
+		switch(opcion) 
+		{
+		case 0:{ 
+				system("cls");
+				cout<<"adios"; 
+			   }
+			   break;
+		case 1 :		{system("cls");
+						cout<<"USTED HA SELECCIONADO EXPOSICION";
+						cout<<endl<<"1.-CLASICA"<<endl;
+						cout<<"2.-PROFESIONAL"<<endl;
+						cout<<"3.-EXPERTO"<<endl;
+						cout<<"4.-PERSONALIZADA"<<endl;
+						cout<<"0.-SALIR"<<endl;
+						cout<<"SELECCIONE UNA OPCION"<<endl;
+						cin>>opcion2;
+						menuclasica(opcion2);
+						}
+					break;
+
+
+			case 2 :
+					{system("cls");
+						cout<<"USTED HA SELECCIONADO CONFERENCIA";
+						cout<<endl<<"1.-CLASICA"<<endl;
+						cout<<"2.-PROFESIONAL"<<endl;
+						cout<<"3.-PERSONALIZADO"<<endl;
+						cout<<"0.-SALIR"<<endl;
+						cout<<"SELECCIONE UNA OPCION"<<endl;
+						cin>>opcion2;
+						menuconferencia(opcion2);
+					}
+						break;
+			case 3 :
+					{	system("cls");
+						cout<<"USTED HA SELECCIONADO RECORDATORIO"<<endl;
+						cout<<"1.-PROFESIONAL"<<endl;
+						cout<<"2.-PERSONALIZADA"<<endl;
+						cout<<"0.-SALIR"<<endl;
+						cout<<"SELECCIONE UNA OPCION"<<endl;
+						cin>>opcion3;
+						menurecordatorio(opcion3);
+					}
+						break;
+			case 4 :
+					{	system("cls");
+						cout<<"USTED HA SELECCIONADO LIBRE"<<endl;
+						cout<<"1.-PERSONALIZADA"<<endl;
+						cout<<"0.-SALIR"<<endl;
+						cout<<"SELECCIONE UNA OPCION"<<endl;
+						cin>>opcion4;
+						menulibre(opcion4);
+					}	
+						break;
+			default :cout<<"OPCION INVALIDA";break;
+			} 
+	}while (opcion !=0);
+	getch ();
+}
