@@ -1,0 +1,16 @@
+#include "stdafx.h"
+#include "stdlib.h"
+#include <time.h>
+using namespace std;
+ 
+	int main (void)
+	{
+	int i,D;
+srand((unsigned)time(NULL));
+for(i=1;i<=10;i++)
+{
+	D=rand()%6+1;
+	printf("\n %d",D);
+}
+	return 0;
+ } 
