@@ -1,0 +1,34 @@
+#include <iostream>
+#include <conio.h>
+#include <stdio.h>
+using namespace std;
+struct registro{
+	char nombre[25];
+	char sexo;
+	int edad;
+	char estado;
+};
+
+void main (){
+	FILE*ptr;
+	registro reg;
+	cout<<"Introduce el nombre: ";
+	do{
+		gets(reg.nombre);
+	}while(strlen(reg.nombre)==0);
+
+	cout<<"Introduce el sexo: ";
+	do{
+		cin>>reg.sexo;
+	}while((reg.sexo!='f')&&(reg.sexo!='m'));
+
+	cout<<"Introduce la edad: ";
+	do{
+		cin>>reg.edad;
+	}while((reg.edad)>0||(reg.edad)<150);
+	cout<<"Introduce el estado: ";
+	cin>>reg.estado;
+	ptr=fopen("amigos.dat","wb");
+	fclose(ptr);
+	getch();
+}
