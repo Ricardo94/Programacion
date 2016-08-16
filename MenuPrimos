@@ -1,0 +1,99 @@
+#include <iostream>
+#include "conio.h"
+
+int invertir (int n);
+bool verifesprimo(int n);
+int sumaprimos(int n);
+int concatenar(int n);
+
+using namespace std;
+void main()
+{int n,r,i,opcion;
+do
+{
+	cout<<"\t              Menu             "<<endl;
+	cout<<"\t==================================="<<endl;
+	cout<<"1.-INVERTIR"<<endl;
+	cout<<"2.-SUMA DE PRIMOS"<<endl;
+	cout<<"3.-ordenar"<<endl;
+	cout<<"4.-buscar"<<endl;
+	cout<<"0.-salir"<<endl;
+	cout<<endl<<"Ingrese opcion: ";
+	cin>>opcion;
+	switch (opcion)
+	{case 1: r=invertir(n);
+	        cout<<"El Numero es: "<<r;
+	    break;
+	case 2: r=sumaprimos(n);
+	       cout<<"La suma de los Primos es: "<<r;
+	    break;
+	case 3:r=concatenar(n);
+	    cout<<"El resultado es: "<<r;
+	    break;
+	case 4:
+		break;
+	case 0:cout<<"salir"<<endl;
+		break;
+	default:cout<<"error"<<endl;
+		break;
+	}
+} while (opcion!=0);
+	getch();
+}
+	
+int invertir(int n)
+{
+	int d,s=0;
+	while(n>0)
+	{
+	 cout<<"Ingrese un numero :  ";
+	 cin>>n;
+     d=n%10;
+	 s=s*10+d;	
+	 n=n/10;
+
+	}
+
+	 return(s);
+}
+
+int sumaprimos(int n)
+{
+	int d,s=0;
+	 cout<<"Ingrese un numero Natural :  ";
+	 cin>>n;
+	while(n>0)
+	{
+     d=n%10;
+	 if(verifesprimo(d)==true)
+	 {
+		 s=s+d;
+	 } 
+	 n=n/10;
+	}
+	 return(s);
+}
+
+bool verifesprimo(int n)
+{
+	int i;
+	bool k=true;
+	for(i=2;i<=n;i++)
+	{ if(n%i==0)
+	{
+		k=false;
+	}
+	}
+	return(k);
+}
+
+int concatenar(int n)
+{
+	int b,d,s=0;
+	 cout<<"Ingrese un numero Natural :  ";
+	 cin>>n;
+	 cout<<"Ingrese un numero Natural :  ";
+	 cin>>b;
+	
+	 return(s);
+}
