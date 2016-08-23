@@ -1,0 +1,133 @@
+#include <iostream>
+#include "conio.h"
+
+void mostrarprimerosimpares(int n);
+void mostrarprimerosprimos(int n);
+bool verifsiesprimo(int n);
+int obtnesimoprimo(int n);
+
+using namespace std;				
+void main()
+{int n,r,i,opcion;
+do
+{
+	cout<<"\t              Menu             "<<endl;
+	cout<<"\t==================================="<<endl;
+	cout<<"1.-PRIMEROS PRIMOS"<<endl;
+	cout<<"2.-PRIMEROS IMPARES"<<endl;
+	cout<<"3.-OBTENER ENESIMO PRIMO"<<endl;
+	cout<<"4.-IMPAR PRIMO PAR"<<endl;
+	cout<<"0.-salir"<<endl;
+	cout<<endl<<"Ingrese opcion: ";
+	cin>>opcion;
+	switch (opcion)
+	{case 1:
+		 cout<<"Ingrese un numero :  ";
+	     cin>>n;
+	     mostrarprimerosprimos(n);
+	    break;
+	case 2:
+		 cout<<"Ingrese un numero :  ";
+	     cin>>n;
+	     mostrarprimerosimpares(n);
+          break;
+	case 3:
+		 cout<<"Ingrese un numero :  ";
+	     cin>>n;
+	     r=obtnesimoprimo(n);
+		 cout<<r;
+          break;
+	case 4:
+		 cout<<"Ingrese un numero :  ";
+	     cin>>n;
+	     imparprimopar(n);
+          break;
+	case 0:cout<<"salir"<<endl;
+		break;
+	default:cout<<"error"<<endl;
+		break;
+	}
+} while (opcion!=0);
+	getch();
+}
+	
+void mostrarprimerosprimos(int n)
+{
+	int i;
+	for(i=0;i<n;i++)
+	{
+	   if(verifsiesprimo(i)==true)
+	   { cout<<i;
+	}
+	}
+}
+
+void mostrarprimerosimpares(int n)
+{
+	int i,imp=1;
+	for(i=0;i<n;i++)
+	{ cout<<imp<<" , ";
+	  imp=imp+2;
+	}
+     
+	}
+
+bool verifsiesprimo(int n)
+{
+	int i;
+	bool k=true;
+	for(i=2;i<=n;i++)
+	{ if(n%i==0)
+	{
+		k=false;
+	}
+	}
+	return(k);
+}
+int obtnesimoprimo(int n)
+{    int c=0, cp=0;
+     while(cp<n)
+	 {
+		 c++;
+		 if(verifsiesprimo(c)==true)
+		 {
+			 cp++;
+		 }
+	 }
+	 return(c);
+}
+void mostrarprimerosprimos(int n)
+{
+	int i;
+	for(i=0;i<n;i++)
+	{
+	   if(verifsiesprimo(i)==true)
+	   { cout<<i;
+	}
+	}
+}
+void imparprimopar(int n)
+{
+	int i,k,imp=1,primo=0,par=2;
+	for(i=0;i<n;i++)
+	{
+	   if(k==1)
+	   { cout<<imp;
+	   imp=imp+2;
+	   k=0;
+	   }
+	   if(k==0)
+	   {
+	    obtnesimoprimo(n);
+		k=2;
+	   } else {
+		   if(k==2)
+		   {
+			   cout<<par;
+			   par=par+2;
+			   k=1;
+	}
+}
+	}
+}
+
