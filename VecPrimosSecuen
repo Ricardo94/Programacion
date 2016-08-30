@@ -1,0 +1,111 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 100
+
+using namespace std;
+
+void cargar(int vec[], int tam);
+void mostrar(int vec[], int tam);
+void elimprimos(int vec[], int tam);
+
+void main()
+{
+	int n, vector[MAX];
+	float prom;
+	do {
+		cout<<"ingrese el numero de elementos: ";
+		cin>>n;
+	}
+	while ((n<=0) || (n>100));
+	cargar (vector,n);
+	mostrar(vector,n);
+    elimprimos(vec,tam);
+	getch ();
+}
+
+
+void cargar(int vec[], int tam)
+{
+	for (int i=0;i<tam;i++)
+	{ 
+			cout<<"Ingrese el valor de vec["<<i<<"]= ";
+			cin>>vec[i];
+	}
+}
+
+void mostrar(int vec[], int tam)
+{
+	for (int i=0;i<tam;i++)
+	{ 
+			cout<<"vec["<<i<<"]= ";
+			cout<<vec[i]<<endl;
+	}
+}
+void elimprimos(int vec[],int &tam)
+{ int i,k;
+	for (i=0;i<tam;i++)
+	{ if(verifsiesprimo(vec[i])==true)
+	{  	for (k=0;k<n-1;k++)
+	{
+		vec[k]=vec[k+1];
+	}
+	n--;
+	i--;
+	}
+}
+}
+
+
+bool verifsiesprimo(int n)
+{
+	int i;
+	bool k=true;
+	for(i=2;i<=n;i++)
+	{ if(n%i==0)
+	{
+		k=false;
+	}
+	}
+	return(k);
+}
+void secuenciaprimos(int vec[],int tam)
+{ int i,k=0, is=0, ib=n-1, b=1;
+    for (i=0;i<tam;i++)
+     { if(k==0)
+	{
+		vec[is++]==obtenernesimoprimo(i);
+		k=1;
+	  } else {
+		vec[ib--]==obtenernesimoprimo(i);
+		k=0;
+	  }
+}
+}
+
+
+int obtnesimoprimo(int n)
+{    int c=0, cp=0;
+     while(cp<n)
+	 {
+		 c++;
+		 if(verifsiesprimo(c)==true)
+		 {
+			 cp++;
+		 }
+	 }
+	 return(c);
+}
+void ordenarascendente(int vec[],int tam)
+{ int i,;
+    for (i=0;i<tam;i++)
+     { if(k==0)
+	{
+		vec[is++]==obtenernesimoprimo(i);
+		k=1;
+	  } else {
+		vec[ib--]==obtenernesimoprimo(i);
+		k=0;
+	  }
+}
+}
